@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Portal</title>
+    <meta name="description" content="A special birthday greeting portal">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hearts-container"></div>
+    <div id="app-container">
+        <!-- Login View -->
+        <div id="login-view" class="view active">
+            <div class="glass-card">
+                <h1>Welcome</h1>
+                <p>Please enter your name to proceed</p>
+                <div class="input-group">
+                    <input type="text" id="name-input" placeholder="Your Name" autocomplete="off">
+                </div>
+                <button id="login-btn">Enter Portal</button>
+                <div id="error-message" class="error"></div>
+            </div>
+        </div>
+
+        <!-- Success View -->
+        <div id="success-view" class="view">
+            <div class="greeting-content">
+                <h1 class="bounce-in">HAPPY BIRTHDAY</h1>
+                <h2 class="neon-text">BHAIJAN</h2>
+            </div>
+        </div>
+
+        <!-- Reject View -->
+        <div id="reject-view" class="view">
+            <div class="reject-content">
+                <h1 class="shake">GET THE HELL OUT OF HERE!!!!!</h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

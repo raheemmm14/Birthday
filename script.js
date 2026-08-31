@@ -37,7 +37,7 @@ function handleLogin() {
     loginView.classList.remove('active');
     
     setTimeout(() => {
-        if (name === 'tauhid') {
+        if (name === 'tauhid' || name === 'sheik tauhid') {
             document.body.style.background = 'linear-gradient(to right, #1f001f, #4a0033, #1f001f)';
             successView.classList.add('active');
             startInfiniteHearts();

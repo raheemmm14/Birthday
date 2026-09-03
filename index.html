@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Portal</title>
-    <meta name="description" content="A special birthday greeting portal">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A special greeting portal">
+    <link rel="stylesheet" href="style.css?v=7">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="hearts-container"></div>
     <div id="app-container">
@@ -17,7 +19,7 @@
                 <h1>Welcome</h1>
                 <p>Please enter your name to proceed</p>
                 <div class="input-group">
-                    <input type="text" id="name-input" placeholder="Your Name" autocomplete="on">
+                    <input type="text" id="name-input" placeholder="Your Name" autocomplete="off">
                 </div>
                 <button id="login-btn">Enter Portal</button>
                 <div id="error-message" class="error"></div>
@@ -27,8 +29,25 @@
         <!-- Success View -->
         <div id="success-view" class="view">
             <div class="greeting-content">
-                <h1 class="bounce-in">HAPPY BIRTHDAY</h1>
-                <h2 class="neon-text">BHAIJAAN</h2>
+                <img src="tauhid-pic.jpeg" alt="Bhaijaan" class="tauhid-photo">
+                <h1 class="gold-neon-text">I LOVE YOU!!!<br>BHAIJAAN</h1>
+            </div>
+        </div>
+
+        <!-- Aynoor View -->
+        <div id="aynoor-view" class="view">
+            <div class="greeting-content">
+                <img src="aynoor.jpeg" alt="Aynoor" class="cute-photo">
+                <h1 class="bounce-in" style="color: #ff1493; text-shadow: 0 0 100px #ff69b4;">YAYYY AYNOOR!</h1>
+                <p class="cute-message">( OH!, BTW I AM 3 MONTHS OLD & I AM A DADDIES GIRL )</p>
+            </div>
+        </div>
+
+        <!-- Sheena View -->
+        <div id="sheena-view" class="view">
+            <div class="greeting-content">
+                <img src="sheena-pic.jpeg" alt="Sheena" class="sheena-photo">
+                <h1 class="bounce-in" style="color: #6495ED; text-shadow: 0 0 40px #4169E1; font-size: 5rem;">SNORA<br>THE EXPLORER</h1>
             </div>
         </div>
 
@@ -39,6 +58,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js?v=7"></script>
 </body>
+
 </html>

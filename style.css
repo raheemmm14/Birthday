@@ -231,6 +231,102 @@ button:active {
     }
 }
 
+/* Tauhid Photo Animation */
+.tauhid-photo {
+    width: auto;
+    max-width: 90vw;
+    height: 55vh;
+    border-radius: 24px;
+    border: 8px solid #ffd700;
+    box-shadow: 0 0 30px #ffaa00;
+    margin-bottom: 1.5rem;
+    animation: cutePop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, floatUpAndDown 3s ease-in-out infinite alternate 1s;
+    opacity: 0;
+}
+
+.gold-neon-text {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 
+        0 0 10px #ffd700,
+        0 0 20px #ffd700,
+        0 0 40px #ffaa00,
+        0 0 80px #ffaa00,
+        0 0 120px #ffd700;
+    animation: pulsateGold 1.5s infinite alternate, slideUp 1s 0.2s both cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    line-height: 1.1;
+}
+
+@keyframes pulsateGold {
+    100% {
+        text-shadow: 
+        0 0 20px #ffd700,
+        0 0 40px #ffd700,
+        0 0 80px #ffaa00,
+        0 0 120px #ffaa00,
+        0 0 160px #ffd700;
+    }
+    0% {
+        text-shadow: 
+        0 0 5px #ffd700,
+        0 0 10px #ffd700,
+        0 0 20px #ffaa00,
+        0 0 40px #ffaa00,
+        0 0 60px #ffd700;
+    }
+}
+
+/* Aynoor Cute Photo Animation */
+.cute-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+    object-position: top;
+    border: 8px solid #ff69b4;
+    box-shadow: 0 0 30px #ff1493;
+    margin-bottom: 1.5rem;
+    animation: cutePop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, floatUpAndDown 3s ease-in-out infinite alternate 1s;
+    opacity: 0;
+}
+
+.cute-message {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    text-shadow: 0 0 15px #ff1493;
+    animation: slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.5s;
+    opacity: 0;
+    letter-spacing: 1px;
+}
+
+@keyframes cutePop {
+    0% { transform: scale(0) rotate(-20deg); opacity: 0; }
+    50% { transform: scale(1.1) rotate(10deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes floatUpAndDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.sheena-photo {
+    width: auto;
+    max-width: 90vw;
+    height: 45vh;
+    border-radius: 24px;
+    border: 8px solid #6495ED;
+    box-shadow: 0 0 30px #4169E1;
+    margin-bottom: 1.5rem;
+    animation: cutePop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, floatUpAndDown 3s ease-in-out infinite alternate 1s;
+    opacity: 0;
+}
+
 /* Reject View */
 .reject-content {
     background: rgba(0, 0, 0, 0.5);
@@ -265,6 +361,10 @@ button:active {
     .glass-card h1 { font-size: 2rem; }
     .bounce-in { font-size: 2.5rem; }
     .neon-text { font-size: 4.5rem; }
+    .gold-neon-text { font-size: 3.5rem; }
+    .cute-photo { max-width: 400px; border-width: 6px; }
+    .tauhid-photo, .sheena-photo { height: 45vh; border-width: 6px; }
+    .cute-message { font-size: 1.2rem; }
     .reject-content { padding: 2rem; width: 90%; }
     .reject-content h1 { font-size: 3rem; }
 }
@@ -275,6 +375,10 @@ button:active {
     .glass-card p { margin-bottom: 1.5rem; font-size: 0.9rem; }
     .bounce-in { font-size: 1.8rem; letter-spacing: 1px; }
     .neon-text { font-size: 3.2rem; }
+    .gold-neon-text { font-size: 2.5rem; }
+    .cute-photo { max-width: 300px; border-width: 4px; }
+    .tauhid-photo, .sheena-photo { height: 40vh; border-width: 4px; }
+    .cute-message { font-size: 1rem; }
     .reject-content { padding: 1.5rem; width: 95%; }
     .reject-content h1 { font-size: 2.2rem; }
     input { padding: 0.8rem 1.2rem; font-size: 1rem; }
